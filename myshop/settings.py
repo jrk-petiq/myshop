@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "shop",
     "cart",
     "orders",
+    "payment",
 ]
 
 MIDDLEWARE = [
@@ -140,4 +141,6 @@ EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 STRIPE_PUBLISHABLE_KEY = "pk_test_51MwU1aL2Z5GjDNPzAA3I6iytWl2DnhvJSAh1GWATALI6OWKDbHSGwj6VVryRHttYuGguuCpBWnPXT7TD210AwdhF00uZpZ2rxf"  # Publishable test env key
 STRIPE_SECRET_KEY = "sk_test_51MwU1aL2Z5GjDNPzd2UIFDACI89MlwtoRi57kbsCPi20e0GlrJyEwBO9zbtUCdd15ncuP36GoRyYYoJy2vLD0t8p00kYZiPE7p"  # Secret test env key
 STRIPE_API_VERSION = "2022-08-01"
-STRIPE_WEBHOOK_SECRET = ""
+STRIPE_WEBHOOK_SECRET = (
+    "whsec_9b1d954c2d0501b42a73043a94bc06e90a3a147dac2a255bd87f439674572110"
+)
