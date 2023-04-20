@@ -13,3 +13,7 @@
 # celery flower
 
 `celery -A myshop flower`
+
+# run redis docker container
+
+`docker run -it --rm --name redis -p 6379:6379 redis`
